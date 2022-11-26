@@ -76,17 +76,33 @@
 type University = [
     {
     name: string;
-    courses: {}[];
+    courses: {
+        name: string;
+        semesters: number;
+        hourPerSemester: number;
+        feePerSemester: number;
+    }[];
     email: string;
     contact: number;
     address: string;
-    students: {}[],
-    professors: {}[]
+    students: {
+        name: string;
+        fatherName: string;
+        contact: number;
+        email: string;
+        address: string;
+    }[],
+    professors: {
+        name: string;
+        fatherName: string;
+        contact: number;
+        email: string;
+        address: string;
+    }[]
 }
 ]
 
-let universities : University
-universities = [
+let universities : University = [
     {
         name: "Karchi Univesity",
         email: "ku@edu.com",
