@@ -144,8 +144,8 @@
 //     }
 // ]
 const button = document.querySelector("button");
-function log() {
-    console.log("clicked");
+function log(data) {
+    console.log("clicked" + data);
 }
-button.addEventListener("click", log);
+button.addEventListener("click", log.bind(null, "Button"));
 //# sourceMappingURL=app.js.map

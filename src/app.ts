@@ -170,8 +170,8 @@
 
 const button = document.querySelector("button")!;
 
-function log() {
-    console.log("clicked");
+function log(data: string) {
+    console.log("clicked" + data);
 }
 
-button.addEventListener("click", log)
+button.addEventListener("click", log.bind(null, "Button"))
