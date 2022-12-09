@@ -151,10 +151,18 @@
 // Classes
 class Students {
     constructor(n, r) {
+        this.skill = [];
         this.name = n;
         this.rollNo = r;
+        // this.skill = s;
     }
+    ;
+    addSkill(skill) {
+        return this.skill.push(skill);
+    }
+    ;
 }
 const student1 = new Students("Nadir", 100);
+student1.addSkill("JavaScript");
 console.log(student1);
 //# sourceMappingURL=app.js.map

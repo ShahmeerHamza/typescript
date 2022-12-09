@@ -182,12 +182,18 @@
 class Students {
     name: string;
     rollNo: number;
+    skill: string[] = [];
 
     constructor(n: string, r: number) {
         this.name = n;
         this.rollNo = r;
-    }
+        // this.skill = s;
+    };
+    addSkill( skill: string ) {
+        return this.skill.push(skill); 
+    };
 }
 
     const student1 = new Students("Nadir", 100);
+    student1.addSkill("JavaScript");
     console.log(student1);
