@@ -168,10 +168,26 @@
 
 
 
-const button = document.querySelector("button")!;
+// const button = document.querySelector("button")!;
 
-function log(data: string) {
-    console.log("clicked" + data);
+// function log(data: string) {
+//     console.log("clicked" + data);
+// }
+
+// button.addEventListener("click", log.bind(null, "Button"))
+
+
+// Classes
+
+class Students {
+    name: string;
+    rollNo: number;
+
+    constructor(n: string, r: number) {
+        this.name = n;
+        this.rollNo = r;
+    }
 }
 
-button.addEventListener("click", log.bind(null, "Button"))
+    const student1 = new Students("Nadir", 100);
+    console.log(student1);

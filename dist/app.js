@@ -143,9 +143,18 @@
 //         ]
 //     }
 // ]
-const button = document.querySelector("button");
-function log(data) {
-    console.log("clicked" + data);
+// const button = document.querySelector("button")!;
+// function log(data: string) {
+//     console.log("clicked" + data);
+// }
+// button.addEventListener("click", log.bind(null, "Button"))
+// Classes
+class Students {
+    constructor(n, r) {
+        this.name = n;
+        this.rollNo = r;
+    }
 }
-button.addEventListener("click", log.bind(null, "Button"));
+const student1 = new Students("Nadir", 100);
+console.log(student1);
 //# sourceMappingURL=app.js.map
