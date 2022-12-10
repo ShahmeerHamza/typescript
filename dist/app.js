@@ -151,18 +151,27 @@
 // Classes
 class Students {
     constructor(n, r) {
-        this.skill = [];
+        this.skills = [];
         this.name = n;
         this.rollNo = r;
         // this.skill = s;
     }
     ;
     addSkill(skill) {
-        return this.skill.push(skill);
+        return this.skills.push(skill);
     }
     ;
+    // Function to get skills from private property
+    getSkills() {
+        return this.skills;
+    }
 }
 const student1 = new Students("Nadir", 100);
 student1.addSkill("JavaScript");
+// To avoid fom this type of problem we use private.
+// student1.skills[3] = "TypeScript";
+// console.log(student1.skills);
+// get skill from private property using function
+console.log(student1.getSkills());
 console.log(student1);
 //# sourceMappingURL=app.js.map
